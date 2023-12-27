@@ -1,0 +1,54 @@
+.promolist{
+  padding-block: 30px;
+  h2{
+    max-width: 900px;
+    margin: auto;
+  }
+  .cu-card-width{
+    width: calc(100% / 5);
+    margin-bottom: 33px;
+    @media(max-width:991px) {
+        width: calc(100% / 2);
+    }
+  }
+
+  .promo-section{
+    margin-bottom: 30px;
+    @media(max-width: 991px){
+      margin-bottom: 10px;
+    }
+    .promotion-banner{
+      img{ width: 100%!important;  }
+    }
+    .promotion-desc{
+      margin-top: 20px;
+       margin-bottom: 40px;
+       @media(max-width: 991px){
+        margin-block: 10px;}
+       @media(max-width: 475px){
+        h1{
+          line-height: unset;
+        }
+      }
+      @media(max-width:320px) {
+        h1,h2{
+          font-size:13px;
+        }
+      }
+    }
+
+    .promotion-products{
+      @media(max-width: 991px){
+        .cu-card-width{
+          margin-bottom: 15px!important;
+          }
+        }
+      }
+
+  }
+  
+
+.padding-container{
+  padding-top: 60px;
+}
+}

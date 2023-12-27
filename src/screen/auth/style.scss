@@ -1,0 +1,124 @@
+.log-in-con,.sign-up-con{
+  background-image: url("../../asset/icon/luxura/bgopt-min.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-block: 50px;
+  @media(max-width: 991px){
+    padding-block: 0;
+    padding-bottom: 20px;
+  }
+}
+  .auth_con {
+  margin-bottom: 40px;
+  @media screen and (max-width: 992px) {
+    padding-top: 20px;
+  }
+
+  .form_wrap {
+    margin: auto;
+    a{cursor: pointer;}
+    .form_card {
+      flex-direction: column;
+      padding: 15px;
+      width: 100%;
+
+      .title_txt {
+        margin-bottom: 50px;
+        @media(max-width: 991px){
+          margin-bottom: 15px;
+          }
+      }
+
+      .desc_txt {
+        margin-bottom: 40px;
+      }
+
+      .form_foot_first {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        margin-bottom: 25px;
+
+        p {
+          cursor: pointer;
+        }
+      }
+
+      .form_foot_sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // padding: 0 40px;
+        button{
+          width:100%
+        }
+        .send_btn {
+          margin-bottom: 20px;
+        }
+
+        .timer_txt {
+          margin-bottom: 30px;
+        }
+
+        button {
+          min-width: 243px;
+        }
+
+        .signup_btn{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .signup_success_con {
+      .icon_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .animation{
+          animation: splash 1s ;
+          @keyframes splash {
+            from {
+                
+                transform: scale(0);
+            }
+            to {
+              transform: scale(1);                
+            }
+        }
+        }
+        .pos_tick {
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          display: flex;
+        }
+      }
+
+      .wel_txt {
+        margin-bottom: 40px;
+      }
+
+      .desc_txt {
+        margin-bottom: 25px;
+      }
+
+      .btn_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .label_txt{
+    font-weight:700;
+  }
+}

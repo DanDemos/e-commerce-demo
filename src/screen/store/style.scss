@@ -1,0 +1,52 @@
+.storelist{
+  .title{
+    // font-size: 30px;
+    margin-bottom: 15px;
+    }
+  padding-block:50px;
+  .static-sidebar .item_con hr{
+    background: #f9f9f9;
+  }
+  .static-sidebar .item_con.active hr {
+    background-color: #0491A4;
+}
+  .location-info{
+    display: flex;
+    .card{
+      border: none;
+    }
+    .main-img{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      @media(max-width: 768px){
+        width: 155px;
+        height: 155px;
+        }
+    }
+    .phone{
+      a{
+        &:not(:last-child)::after{
+          content: ',';
+        }
+        &:nth-child(2){
+          padding-left: 8px;
+        }
+      }
+    }
+    @media(max-width:991px) {
+      flex-direction: column;
+    }
+  }
+  a{
+    color: #0491A4;
+  }
+  @media(max-width: 997px){
+    padding-block:20px;
+  .static-sidebar{
+    border: 1px solid red;
+      padding-left: 0!important;
+      padding-top: 0!important;
+    }
+}
+}

@@ -1,0 +1,118 @@
+.news-and-activity{
+  padding-block: 50px;
+  .title{
+    margin-bottom: 40px;
+    @media(max-width: 991px){
+      margin-bottom: 20px;}
+  }
+  .row{
+    row-gap: 5rem;
+    @media(max-width: 991px){
+      row-gap: 20px;
+    }
+    }
+  @media(max-width: 991px){
+    padding-block: 10px;
+    .title{
+      margin-bottom: 0;}
+  }
+  .pagination-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.news-activity-detail{
+    padding-block: 50px;
+  .row{ justify-content: space-between;}
+  @media(max-width: 991px){
+    margin-top: 30px;
+  }
+  a{ text-decoration: none;}
+
+
+  .news-content{
+    .slider-con{
+      width: 100%;
+      img{width: 100%;}
+      margin-bottom: 15px;
+    }
+    p{ margin-bottom: 15px;}
+    .prev{
+      left: -34px;
+      top: -12px;
+      @media(max-width:768px) {
+        left:-20px;
+      }
+      }
+   .next{
+      right: -34px;
+      top: -12px;
+      @media(max-width:768px) {
+        right: -21px;
+      }
+    }
+    .video-con{ 
+      margin-top: 30px;
+      max-height: fit-content; 
+      position: relative;
+      video{ 
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+        display: block;
+        object-fit: cover;
+      }
+      .poster{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left:0;
+        opacity: 0.9;
+      }
+      .play-icon{
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+      opacity: 70%;
+      @media(max-width: 768px){
+        width: 54px;
+        height: 54px;
+      }
+      }
+    }
+    button{
+      display: inline-block;
+      text-transform: uppercase;
+      width: fit-content;
+      svg{ margin-right: 10px;}
+      font-size: 18px;
+      margin-top: 30px;
+      border: 1px solid #262626;
+      }
+        p{
+          margin-bottom: 0;}
+  }
+  .sidebar{
+    border: 1px solid #D9D9D9;
+    height: fit-content;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    hr{
+      width: 100%;
+      height: 1px;
+      color: #444444;
+      margin-top: 8px!important;
+      }
+    @media(max-width: 991px){
+      display: none;
+      margin-top: 30px;
+      padding: 10px;
+    }
+  }
+}
