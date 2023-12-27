@@ -1,0 +1,20 @@
+.search-con-mobile {
+  position: relative;
+  padding: 13px;
+  background: #F5F5F5;
+  input {
+    min-width: 350px;
+    height: 45px;
+    border-color: #D9D9D9;
+    border-radius: 5px;
+    @media (max-width: 1300px) {
+      min-width: auto;
+      height: 40px;
+    }
+  }
+  svg {
+    position: absolute;
+    top: 20px;
+    right: 23px;
+  }
+}
